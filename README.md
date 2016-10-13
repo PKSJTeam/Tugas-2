@@ -39,69 +39,76 @@ Dasar teori :
 
 3. Langkah Instalasi
 
-a. Masuk ke user root MySQL
+  3.1 Instalasi Wordpress
 
-  dengan command mysql -u root -p
+    a. Masuk ke user root MySQL
+
+       dengan command mysql -u root -p
  
-b. Melakukan proses download Wordpress
+    b. Melakukan proses download Wordpress
 
-  dengan command wget http://wordpress.org/latest.tar.gz
+       dengan command wget http://wordpress.org/latest.tar.gz
   
-c. Extract Wordprees yang telah didownload
+    c. Extract Wordprees yang telah didownload
     
-  dengan command tar xzvf latest.tar.gz
+       dengan command tar xzvf latest.tar.gz
   
-d. Lakukan update pada Ubuntu server
+    d. Lakukan update pada Ubuntu server
   
-  dengan command sudo apt-get update
+       dengan command sudo apt-get update
   
-e. Installing PHP
+    e. Installing PHP
 
-  dengan command sudo apt-get install php5-gd libssh2-php
+       dengan command sudo apt-get install php5-gd libssh2-php
   
-f. Konfigurasi wordpress
+    f. Konfigurasi wordpress
 
-  dengan command cd ~/wordpress
-g. Lakukan copying 
+       dengan command cd ~/wordpress
+       
+    g. Lakukan copying 
 
-  dengan command cp wp-config-sample.php wp-config.php
+       dengan command cp wp-config-sample.php wp-config.php
   
-h. Memberika parameter berupa informasi database yang dibuat
+    h. Memberika parameter berupa informasi database yang dibuat
 
-  dengan command 
+       dengan command 
   
-  /** The name of the database for WordPress */
+           /** The name of the database for WordPress */
   
-  define('DB_NAME', 'wordpress');
+            define('DB_NAME', 'wordpress');
 
 
-  /** MySQL database username */
+           /** MySQL database username */
 
-  define('DB_USER', 'wordpressuser');
+            define('DB_USER', 'wordpressuser');
 
 
-  /** MySQL database password */
+           /** MySQL database password */
 
-  define('DB_PASSWORD', 'password');
+            define('DB_PASSWORD', 'password');
   
-j. Masuk ke /var/www/html/
+     j. Masuk ke /var/www/html/
 
-  dengan command sudo rsync -avP ~/wordpress/ /var/www/html/
+        dengan command sudo rsync -avP ~/wordpress/ /var/www/html/
 
-k. Masuk ke document root
+    k. Masuk ke document root
 
-  dengan command cd /var/www/html
+        dengan command cd /var/www/html
 
-l. Quickly assign these ownership values
+    l. Quickly assign these ownership values
 
-  dengan command sudo chown -R demo:www-data *
+        dengan command sudo chown -R demo:www-data *
   
-m. Membuat folder untuk mengisi file upload
+    m. Membuat folder untuk mengisi file upload
 
-  dengan command mkdir /var/www/html/wp-content/uploads
+        dengan command mkdir /var/www/html/wp-content/uploads
   
-n. Allow the web server itself to write to this directory
+    n. Allow the web server itself to write to this directory
 
-  dengan command sudo chown -R :www-data /var/www/html/wp-content/uploads
-
+        dengan command sudo chown -R :www-data /var/www/html/wp-content/uploads
+        
+  
+  3.2 Instalasi SQLmap
+    a. download sqlmap
+    dengan command wget 'https://github.com/sqlmapproject/sqlmap/tarball/master' --output-document=sqlmapproject-sqlmap-0.9-3671-gdcaad75.tar.gz
 
