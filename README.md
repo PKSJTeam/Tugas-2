@@ -1,10 +1,10 @@
 # Tugas-2
 
-Tugas 1 PKSJ - Ganjil 2016/2017
+Tugas 2 PKSJ - Ganjil 2016/2017
 
 Pendahuluan
 
-Tugas 1 adalah tugas pertama yang harus di selesaikan sebagai salah satu syarat penilaian pada matakuliah Perancangan Keamanan & Sistem Jaringan (PKSJ) Semester Ganjil 2016/2017, TeknikInformatika ITS, Surabaya
+Tugas 2 adalah tugas kedua yang harus di selesaikan sebagai salah satu syarat penilaian pada matakuliah Perancangan Keamanan & Sistem Jaringan (PKSJ) Semester Ganjil 2016/2017, TeknikInformatika ITS, Surabaya
 
 AnggotaKelompok
 
