@@ -100,4 +100,8 @@ m. Membuat folder untuk mengisi file upload
 
   dengan command mkdir /var/www/html/wp-content/uploads
   
-n. 
+n. Allow the web server itself to write to this directory
+
+  dengan command sudo chown -R :www-data /var/www/html/wp-content/uploads
+
+
